@@ -57,12 +57,13 @@ td{
 
 main p{
     text-align: center;
-    margin-left: 30vw;
+    margin: 20px 20vw 20px 20vw;
     border: #5E08C4 solid 1px;
     border-radius: 10px;
     background: #893FE2;
-    width: 30vw;
+    
     padding: 5px;
+    font-size: 24px;
 }
 
 
@@ -70,6 +71,8 @@ main p{
 td img {
     max-height: 25vw;
     max-width: 25vw;
+    min-height: 15vw;
+    min-width: 15vw;
 }
 
 a {
