@@ -28,7 +28,7 @@ var name = document.location.pathname.replace(/.*\//, "" ).replace(/\.html/,"")
 
 for (var i in NAMES) {
     if (name == i){
-        header.innerHTML += `<p>${NameTwo[i]}</p>`
+        header.innerHTML += `<p id="select" >${NameTwo[i]}</p>`
     }else{
         header.innerHTML += `<p><a href="${NAMES[i]}.html">${NameTwo[i]}</a></p>`
     }
