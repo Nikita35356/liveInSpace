@@ -79,3 +79,7 @@ td img {
 a {
     color: #FFEB00;
 }
+
+#select {
+    border-bottom: #FFEB00 solid 5px;
+}
