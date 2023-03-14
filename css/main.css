@@ -1,13 +1,24 @@
+
+:root {
+    --backColor: #3B037F;
+    --mainColor: #893FE2;
+    --borderColor: #D789FF;
+    --backColorRazdel: #5E08C4;
+    --borderBack: #A066BE;
+}
+
+
+
+
+
 body {
     color: white;
-    background-color: #3B037F;
+    background-color: var(--backColor);
 }
 
 .icon {
     width: 50px;
     height: 50px;
-    /*border: #5E08C4 solid 1px;
-    border-radius: 10px;*/
     background: url("../icon.png") no-repeat;
     background-size:100%;
     text-align: left;
@@ -30,18 +41,18 @@ footer {
 }
 
 footer p {
-    border: #893FE2 solid 1px;
+    border: var(--borderColor) solid 1px;
     border-radius: 10px;
     padding:10px 10px 10px 10px;
-    background-color: #893FE2;
+    background-color: var(--mainColor);
 }
 
 header,main,footer{
     padding: 2px;
     margin: 10px;
-    border: #5E08C4 solid 1px;
+    border: var(--borderBack) solid 1px;
     border-radius: 10px;
-    background: #5E08C4;
+    background: var(--backColorRazdel);
 }
 
 
@@ -51,17 +62,17 @@ td{
     margin:1vw;
     width: 33vw;
     height: 33vw;
-    border: #5E08C4 solid 1px;
+    border: var(--borderColor) solid 1px;
     border-radius: 10px;
-    background: #893FE2;
+    background: var(--mainColor);
 }
 
 main p{
     text-align: center;
     margin: 10px 10vw 10px 10vw;
-    border: #5E08C4 solid 1px;
+    border: var(--borderColor) solid 1px;
     border-radius: 10px;
-    background: #893FE2;
+    background: var(--mainColor);
     
     padding: 5px;
     font-size: 24px;
