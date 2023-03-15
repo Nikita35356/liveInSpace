@@ -16,8 +16,8 @@
     position: relative;
     background: #00000099;
     width: inherit;
-    height: 50px;
-    top: -50px;
+    height: 5ch;
+    top: -5vh;
 }
 .img {
     width: inherit;
