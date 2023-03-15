@@ -16,7 +16,7 @@ if (version != "") {
 }
 
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    versions.href = "css\versionPC.css"
+    versions.href = "css/versionPC.css"
 }
 
 
