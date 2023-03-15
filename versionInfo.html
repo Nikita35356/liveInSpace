@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/version.css" type="text/css" />
         <title>Live in Space</title>
     </head>
 
@@ -10,41 +11,12 @@
             <p><a href="index.html">Live in Space</a></p>
             <p>Обновления</p>
         </header>
-        <main>
+        <main id="main">
             
-            <p>
-                Версия 0.0.1
-            </p>
-            <table>
-                <tr>
-                    <td>Название</td>
-                    <td>Идея</td>
-                    <td>Сюжет</td>
-                </tr>
-            </table>
-
-            <p>
-                Версия 0.0.2
-            </p>
-            <table>
-                <tr>
-                    <td><img src="https://learn.algoritmika.org/uploads/student/2136839/640d9012b3b58.png"><br>Железная руда</td>
-                    <td><img src="https://learn.algoritmika.org/uploads/student/2136839/640d8c07316f9.png"><br>Ограниченный открытый мир</td>
-                    <td><img src="https://learn.algoritmika.org/uploads/student/2136839/640d8f497a81d.png"><br>Интерфейс</td>
-                </tr>
-            </table>
-                    
-                
-            <p>
-                Версия 0.0.3
-            </p>
-            <table>
-                <tr>
-                    <td><img src="https://learn.algoritmika.org/uploads/student/2136839/640d8ba817d9a.png"><br>Зодотая руда</td>
-                    <td><img src="https://learn.algoritmika.org/uploads/student/2136839/640d8c07316f9.png"><br>Более открытый мир</td>
-                    <td><img src="https://learn.algoritmika.org/uploads/student/2136839/640d8c6d198cd.png"><br>Интерфейс</td>
-                </tr>
-            </table>
+            <div class="vers" onclick="openVers('0.0.2')"><img class="img" src="sprites/0.0.2.png" alt="" /><div class=names>0.0.2</div>
+            </div>
+            <div class="vers" onclick="openVers('0.0.2')"><img class="img" src="sprites/0.0.3.png" alt="" /><div class=names>0.0.3</div>
+            </div>
 
 
         </main>
@@ -58,4 +30,5 @@
 
     </body>
     <script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/version.js"></script>
 </html>
