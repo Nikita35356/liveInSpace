@@ -1,30 +1,32 @@
 var infoVersion = {
-    "0.0.1":["Название","Идея","Сюжет","Пару вещей(Переделано в 0.0.2)"],
     "0.0.2":["Система строительства(Переделано, на данный момент не доступно для игрока)","Железная руда","Статистика при наведении на строение","Лог"],
     "0.0.3":[["Золото",["Спавн","Предмет “Золотая руда”"]],["Инвентарь",["Работает кнопка “Выкинуть всё” и “Съесть”(Пока что нет предмета который можно съесть))"]],"Интерфейс (немного изменился)"],
 }
 
-var code = "<table>"
 
+
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    Style.href = "css/versionPC.css"
+}
 
 var version = document.location.search.slice(9)
+
+var code = `<h2>В ${version} добавили:</h2>`
 
 if (version != "") {
     ver()
 }else{
-    
+    loadVer()
 }
 
-if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    versions.href = "css/versionPC.css"
-}
+
 
 
 function ver(){
     
     version = "0.0.3"
     
-        
+    Style.href = "css/version.css"
     parse(infoVersion[version],t=true)
 }
 
@@ -45,6 +47,7 @@ function parse(item,t=false) {
         
     }
     if (t) {
+         
         console.log(code);
         main.innerHTML = code
     }
@@ -52,7 +55,13 @@ function parse(item,t=false) {
 }
 
 
-
+function loadVer(){
+    var codes = ""
+    for(var i in infoVersion){
+        codes += `<div class="vers" onclick="openVers('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`
+    }
+    main.innerHTML = `<div id="tt">` + codes + `</div>`
+}
 
 
 function openVers(vers){
