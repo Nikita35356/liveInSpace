@@ -6,9 +6,14 @@
     width: 30vw;
     height: auto;
     background-size: 100%;
+    cursor: pointer;
 }
+
+.vers:active {
+    cursor: wait;
+}
+
 .names {
-    padding: 0px;
     margin: 0px;
     font-size: 150%;
     position: relative;
@@ -23,6 +28,10 @@
     filter: brightness(0.8);
 }
 
-#main {
+#tt {
     display:flex;
+}
+
+.vers:hover {
+    filter: brightness(0.6);
 }
