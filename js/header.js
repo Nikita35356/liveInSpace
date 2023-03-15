@@ -27,7 +27,7 @@ var name = document.location.pathname.replace(/.*\//, "" ).replace(/\.html/,"")
 
 
 for (var i in NAMES) {
-    if (name == i){
+    if (name == i && location.search == ""){
         header.innerHTML += `<p id="select">${NameTwo[i]}</p>`
     }else{
         header.innerHTML += `<p><a href="${NAMES[i]}.html">${NameTwo[i]}</a></p>`
