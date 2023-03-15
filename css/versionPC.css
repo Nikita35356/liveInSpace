@@ -1,0 +1,28 @@
+.vers {
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    text-align: left;
+    width: 30vw;
+    height: auto;
+    background-size: 100%;
+}
+.names {
+    padding: 0px;
+    margin: 0px;
+    font-size: 150%;
+    position: relative;
+    background: #00000099;
+    width: inherit;
+    height: 20%;
+    top: -20%;
+}
+.img {
+    width: inherit;
+    height: inherit;
+    filter: brightness(0.8);
+}
+
+#main {
+    display:flex;
+}
