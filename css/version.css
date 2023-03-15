@@ -1,0 +1,26 @@
+.vers {
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    
+    text-align: left;
+    width: 80vw;
+    height: auto;
+    /*background: url("sprites/0.0.2.png") no-repeat;*/
+    background-size: 100%;
+}
+.names {
+    padding: 0px;
+    margin: 0px;
+    font-size: 5vw;
+    position: relative;
+    background: #00000099;
+    width: inherit;
+    height: 50px;
+    top: -50px;
+}
+.img {
+    width: inherit;
+    height: inherit;
+    filter: brightness(0.8);
+}
