@@ -20,6 +20,7 @@
     top: -5vh;
 }
 .img {
+    image-rendering: pixelated;
     width: inherit;
     height: inherit;
     filter: brightness(0.8);
