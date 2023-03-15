@@ -10,7 +10,6 @@
     background-size: 100%;
 }
 .names {
-    padding: 0px;
     margin: 0px;
     font-size: 3vh;
     position: relative;
@@ -24,4 +23,8 @@
     width: inherit;
     height: inherit;
     filter: brightness(0.8);
+}
+
+.vers:hover {
+    filter: brightness(0.6);
 }
