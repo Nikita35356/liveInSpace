@@ -1,3 +1,5 @@
+const { versions } = require("process")
+
 var infoVersion = {
     "0.0.1":["Название","Идея","Сюжет","Пару вещей(Переделано в 0.0.2)"],
     "0.0.2":["Система строительства(Переделано, на данный момент не доступно для игрока)","Железная руда","Статистика при наведении на строение","Лог"],
@@ -14,6 +16,11 @@ if (version != "") {
 }else{
     
 }
+
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    versions.href = "css\versionPC.css"
+}
+
 
 function ver(){
     
