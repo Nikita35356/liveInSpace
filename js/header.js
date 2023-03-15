@@ -40,7 +40,7 @@ for (var i in NAMES) {
 
 
 
-var req = new XMLHttpRequest();
+/*var req = new XMLHttpRequest();
 req.open("GET", "js/version.js", false);
 req.send();
-console.log(req.responseText);
+console.log(req.responseText);*/
