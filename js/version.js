@@ -25,8 +25,6 @@ if (version != "") {
 
 function ver(){
     
-    version = "0.0.3"
-    
     Style.href = "css/version.css"
     parse(infoVersion[version],t=true)
 }
