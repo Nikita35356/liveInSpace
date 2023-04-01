@@ -66,7 +66,7 @@ function loadVer(){
             g = 0
         }
     }
-    var o = "</div>"
+    var o = "</div><div id='tt'>"
     if (g == 0){
         o = ""
     }
