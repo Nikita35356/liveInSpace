@@ -62,11 +62,11 @@ function loadVer(){
         g++
         codes += `<div class="vers" onclick="openVers('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`
         if(g == 3){
-            codes += "</div>"
+            codes += "</div><div id='tt'>"
             g = 0
         }
     }
-    var o = "</div><div id='tt'>"
+    var o = "</div>"
     if (g == 0){
         o = ""
     }
