@@ -29,10 +29,6 @@
     filter: brightness(0.8);
 }
 
-#tt {
-    display:flex;
-}
-
 .vers:hover {
     filter: brightness(0.6);
 }
