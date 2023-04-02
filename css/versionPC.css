@@ -34,6 +34,8 @@
     filter: brightness(0.6);
 }
 
-#main {
-    height: 120vh;
+#tt {
+    display:flex;
+    flex-wrap:wrap;
 }
+
