@@ -70,7 +70,7 @@ function loadVer(){
     if (g == 0){
         o = ""
     }
-    main.innerHTML = codes + "</div>"
+    tt.innerHTML = codes + "</div>"
 }
 
 
