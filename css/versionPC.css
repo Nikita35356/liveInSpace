@@ -33,3 +33,7 @@
 .vers:hover {
     filter: brightness(0.6);
 }
+
+#main {
+    height: 400px;
+}
