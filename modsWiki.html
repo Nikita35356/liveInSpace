@@ -33,7 +33,7 @@
                 <a href="#main">Основные файлы</a><br>
                 <a href="#items">Предметы</a><br>
                 <a href="#texture">Текстуры</a><br>
-                <a href="#osnova">Основа</a><br>
+                <a href="#localization">Локализация</a><br>
             </p>
             <h2>Основа</h2>
             <p id="osnova">
@@ -52,7 +52,7 @@
 Сначала разберём description.json .
 Пример того, что в нём находиться.
 
-<div style="background-color: rgb(51, 51, 51);">{
+<div class="code">{
     <span class="key">"name"</span>:{
         <span class="key">"ru"</span>:<span class="string">"Ванила"</span>,
         <span class="key">"en"</span>:<span class="string">"Vanilla"</span>
@@ -61,11 +61,32 @@
         <span class="key">"ru"</span>:<span class="string">"Это копия ванильного мода для изучения основ мододеланья"</span>,
         <span class="key">"en"</span>:<span class="string">"This is a copy of a vanilla mod for learning the basics of modding."</span>
     }
-}
-</div>
+}</div>
 В «name» находиться название мода.
 В «description» описание мода.
-Подробнее о «ru» и «en» смотреть в локализация
+Подробнее о «ru» и «en» смотреть в <a href="#localization">локализация</a>
+
+<font style="font-size: 200%;">Файл main.json</font>
+
+Также существует и main файл.
+В нём уже описываются файлы мода.
+
+Пример:
+<div class="code">{
+    <span class="key">"name"</span>:{
+        <span class="key">"ru"</span>:<span class="string">"Ванила"</span>,
+        <span class="key">"en"</span>:<span class="string">"Vanilla"</span>
+    },
+    <span class="key">"description"</span>:{
+        <span class="key">"ru"</span>:<span class="string">"Это копия ванильного мода для изучения основ мододеланья"</span>,
+        <span class="key">"en"</span>:<span class="string">"This is a copy of a vanilla mod for learning the basics of modding."</span>
+    }
+}</div>
+
+
+
+
+
 
 </div>
             <p id="items">
@@ -84,7 +105,7 @@
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
             </p>
-            <p>
+            <p id="localization">
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
             </p>
