@@ -8,7 +8,13 @@
 }
 
 
-
+header,main,footer{
+    padding: 2px;
+    margin: 10px;
+    border: var(--borderBack) solid 1px;
+    border-radius: 10px;
+    background: var(--backColorRazdel);
+}
 
 
 body {
@@ -28,7 +34,8 @@ body {
 header {
     padding: 10px;
     display: flex;
-    text-align:center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 header p {
@@ -38,23 +45,18 @@ header p {
 
 
 footer {
-    padding: 5px;
+    padding: 10px;
 }
 
 footer p {
+    margin:10px;
     border: var(--borderColor) solid 1px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding:10px 10px 10px 10px;
     background-color: var(--mainColor);
 }
 
-header,main,footer{
-    padding: 2px;
-    margin: 10px;
-    border: var(--borderBack) solid 1px;
-    border-radius: 10px;
-    background: var(--backColorRazdel);
-}
+
 
 
 
