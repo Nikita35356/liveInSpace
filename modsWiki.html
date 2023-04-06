@@ -9,6 +9,17 @@
         <link rel="stylesheet" href="css/syntax.css">
         <title>Live in Space</title>
         <style>
+            main div{
+                text-align: center;
+                margin: 10px 10vw 10px 10vw;
+                border: var(--borderColor) solid 1px;
+                border-radius: 10px;
+                background: var(--mainColor);
+    
+                padding: 5px;
+                font-size: 24px;
+            }
+            
             main p, main div{
                 text-align:justify;
                 margin: auto;
@@ -18,6 +29,7 @@
             h2 {
                 margin-left: 30px;
             }
+            
         </style>
     </head>
     <body>
@@ -43,6 +55,11 @@
                 Требуется:<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;1.	Любой текстовый редактор<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;2.	Вики<br>
+                <br>
+                <br>
+                Теперь когда вы знаете что вам нужно начнём создание. <br><br>
+                1. Создать папку мода (без разницы где) <br>
+                2. Обязательно создать в них main.json и description.json, их заполнение в следущем пункте. <br>
 
             </p>
             <h2>Основные файлы</h2>
@@ -72,16 +89,16 @@
 В нём уже описываются файлы мода.
 
 Пример:
-<div class="code">{
-    <span class="key">"name"</span>:{
-        <span class="key">"ru"</span>:<span class="string">"Ванила"</span>,
-        <span class="key">"en"</span>:<span class="string">"Vanilla"</span>
-    },
-    <span class="key">"description"</span>:{
-        <span class="key">"ru"</span>:<span class="string">"Это копия ванильного мода для изучения основ мододеланья"</span>,
-        <span class="key">"en"</span>:<span class="string">"This is a copy of a vanilla mod for learning the basics of modding."</span>
-    }
-}</div>
+<div class="code">[
+    [<span class="string">"items.json"</span>,<span class="string">"items"</span>],
+    [<span class="string">"texturesItems.json"</span>,<span class="string">"textures"</span>],
+    [<span class="string">"texturesBuilds.json"</span>,<span class="string">"textures"</span>],
+    [<span class="string">"options.json"</span>,<span class="string">"options"</span>],
+    [<span class="string">"names.json"</span>,<span class="string">"names"</span>],
+    [<span class="string">"builds.json"</span>,<span class="string">"builds"</span>],
+    [<span class="string">"loot_table.json"</span>,<span class="string">"loot_table"</span>]
+]
+</div>
 
 
 
