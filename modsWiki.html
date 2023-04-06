@@ -42,7 +42,7 @@
             <h2>Оглавление:</h2>
             <p>
                 <a href="#osnova">Основа</a><br>
-                <a href="#main">Основные файлы</a><br>
+                <a href="#main">Главные файлы</a><br>
                 <a href="#items">Предметы</a><br>
                 <a href="#texture">Текстуры</a><br>
                 <a href="#localization">Локализация</a><br>
@@ -62,7 +62,7 @@
                 2. Обязательно создать в них main.json и description.json, их заполнение в следущем пункте. <br>
 
             </p>
-            <h2>Основные файлы</h2>
+            <h2>Главные файлы</h2>
             <div style="white-space: pre-wrap;" id="main">
 Файл main.json и description.json  являются «корневыми файлами» .
 Без них невозможно создать мод .
@@ -100,12 +100,22 @@
 ]
 </div>
 
+В массиве перечисляются все файлы.
 
+Шаблонный элемент:
+<div class="code">[<span class="string">"items.json"</span>,<span class="string">"items"</span>]</div>
 
+"items.json" это абсолютный путь к файлу от папки мода.
+"items" это тип файла. Подробнее <a href="#typesFiles">здесь</a>
 
 
 
 </div>
+            <h2>Типы файлов</h2>
+            <p id="typesFiles">
+                Хочешь создать мод для LiveInSpace?<br>
+                То тебе сюда.
+            </p>
             <p id="items">
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
