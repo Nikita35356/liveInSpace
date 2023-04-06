@@ -1,6 +1,6 @@
 var header = document.getElementsByTagName("header")[0]
 
-header.innerHTML = `<div class="icon"></div>`
+header.innerHTML =`<div class="icon"></div>`
 
 
 const NAMES = {
