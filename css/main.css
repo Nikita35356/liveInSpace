@@ -70,7 +70,7 @@ td{
     background: var(--mainColor);
 }
 
-main p{
+main p, main div{
     text-align: center;
     margin: 10px 10vw 10px 10vw;
     border: var(--borderColor) solid 1px;
