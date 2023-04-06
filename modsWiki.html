@@ -6,13 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
         <link id="Style" rel="stylesheet" href="css/version.css" type="text/css" />
+        <link rel="stylesheet" href="css/syntax.css">
         <title>Live in Space</title>
         <style>
-            main p{
+            main p, main div{
                 text-align:justify;
                 margin: auto;
-                margin-top: 10px;
+                margin-bottom: 50px;
                 padding: 1vw;
+            }
+            h2 {
+                margin-left: 30px;
             }
         </style>
     </head>
@@ -23,22 +27,47 @@
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
             </p>
+            <h2>Оглавление:</h2>
             <p>
-                Оглавление:
-                <a href="#osnova">Основа</a>
-                <a href="#main">Файл маин</a>
-                <a href="#items">Предметы</a>
-                <a href="#texture">Текстуры</a>
-                <a href="#osnova">Основа</a>
+                <a href="#osnova">Основа</a><br>
+                <a href="#main">Основные файлы</a><br>
+                <a href="#items">Предметы</a><br>
+                <a href="#texture">Текстуры</a><br>
+                <a href="#osnova">Основа</a><br>
             </p>
+            <h2>Основа</h2>
             <p id="osnova">
-                Хочешь создать мод для LiveInSpace?<br>
-                То тебе сюда.
+                Тебе стало нечего делать и решил создать мод, то тебе надо будет знать:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;1.	Как работают  .json файлы<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2.	Знать английские буквы<br>
+                Требуется:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;1.	Любой текстовый редактор<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2.	Вики<br>
+
             </p>
-            <p id="main">
-                Хочешь создать мод для LiveInSpace?<br>
-                То тебе сюда.
-            </p>
+            <h2>Основные файлы</h2>
+            <div style="white-space: pre-wrap;" id="main">
+Файл main.json и description.json  являются «корневыми файлами» .
+Без них невозможно создать мод .
+Сначала разберём description.json .
+Пример того, что в нём находиться.
+
+<div style="background-color: rgb(51, 51, 51);">{
+    <span class="key">"name"</span>:{
+        <span class="key">"ru"</span>:<span class="string">"Ванила"</span>,
+        <span class="key">"en"</span>:<span class="string">"Vanilla"</span>
+    },
+    <span class="key">"description"</span>:{
+        <span class="key">"ru"</span>:<span class="string">"Это копия ванильного мода для изучения основ мододеланья"</span>,
+        <span class="key">"en"</span>:<span class="string">"This is a copy of a vanilla mod for learning the basics of modding."</span>
+    }
+}
+</div>
+В «name» находиться название мода.
+В «description» описание мода.
+Подробнее о «ru» и «en» смотреть в локализация
+
+</div>
             <p id="items">
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
