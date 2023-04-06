@@ -1,16 +1,20 @@
+var header = document.getElementsByTagName("header")[0]
+
 header.innerHTML = `<div class="icon"></div>`
 
 
 const NAMES = {
     "index":"index",
     "versionInfo":"versionInfo",
-    "versionDownload":"versionDownload"
+    "versionDownload":"versionDownload",
+    "modsWiki":"modsWiki"
 }
 
 const NameTwo = {
     "index":"Главная",
     "versionInfo":"Обновления",
-    "versionDownload":"Скачать"
+    "versionDownload":"Скачать",
+    "modsWiki":"Мод Вики"
 }
 
 
