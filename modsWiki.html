@@ -15,7 +15,7 @@
                 border: var(--borderColor) solid 1px;
                 border-radius: 10px;
                 background: var(--mainColor);
-    
+                
                 padding: 5px;
                 font-size: 24px;
             }
@@ -42,13 +42,14 @@
             <h2>Оглавление:</h2>
             <p>
                 <a href="#osnova">Основа</a><br>
-                <a href="#main">Главные файлы</a><br>
+                <a href="#main">Главные файлы (description, main)</a><br>
+                <a href="#typesFiles">Типы файлов</a><br>
                 <a href="#items">Предметы</a><br>
                 <a href="#texture">Текстуры</a><br>
                 <a href="#localization">Локализация</a><br>
             </p>
-            <h2>Основа</h2>
-            <p id="osnova">
+            <h2  id="osnova">Основа</h2>
+            <p>
                 Тебе стало нечего делать и решил создать мод, то тебе надо будет знать:<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;1.	Как работают  .json файлы<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;2.	Знать английские буквы<br>
@@ -62,8 +63,8 @@
                 2. Обязательно создать в них main.json и description.json, их заполнение в следущем пункте. <br>
 
             </p>
-            <h2>Главные файлы</h2>
-            <div style="white-space: pre-wrap;" id="main">
+            <h2 id="main">Главные файлы</h2>
+            <div style="white-space: pre-wrap;">
 Файл main.json и description.json  являются «корневыми файлами» .
 Без них невозможно создать мод .
 Сначала разберём description.json .
@@ -111,14 +112,26 @@
 
 
 </div>
-            <h2>Типы файлов</h2>
-            <div id="typesFiles">
+            <h2 id="typesFiles">Типы файлов</h2>
+            <div style="white-space: pre-wrap;" id="typesFiles">
+В main.json файле есть тип файлов, но зачем они?
+Тип даёт понять про что будет файл, с текстурами или локализацией.
+Есть много типов:
+•	names – файл локализации
+•	textures – файл со списком текстур
+•	items – файл со списком предметов
+•	builds – файл со списком строений
+•	loot_table – файл со списком лутов
+•	options – файл со списком намтроек (в разработке)
+•	ui – файл с интерфейсом (в разработке)
+•	scripts – файл со скриптами (в разработке)
 
+Все типы маленькими буквами
             </div>
-            <p id="items">
-                Хочешь создать мод для LiveInSpace?<br>
-                То тебе сюда.
-            </p>
+            <h2 id="items">Файл предметов</h2>
+            <div style="white-space: pre-wrap;">
+В написании
+            </div>
             <p id="texture">
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
