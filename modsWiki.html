@@ -164,10 +164,55 @@
 «id_texture» - айди <a href="#texture">текстуры</a>
             </div>
             <h2 id="texture">Текстуры</h2>
-            <p>
-                Хочешь создать мод для LiveInSpace?<br>
-                То тебе сюда.
-            </p>
+            <div style="white-space: pre-wrap;">
+Для мода надо текстуры?
+То создайте json файл (например texture.json)
+И по традиции добавте в main.json шаблон изменив путь и тип.
+
+Пример файла с текстурами
+<div class="code">{
+    <span class="key">"space_stone"</span>:{
+        <span class="key">"type"</span>:<span class="string">"image"</span>,
+        <span class="key">"path"</span>:<span class="string">"textureItem/space_stone.png"</span>
+    },
+    <span class="key">"dovynaid"</span>:{
+        <span class="key">"type":"animation"</span>,
+        <span class="key">"format":"png"</span>,
+        <span class="key">"path"</span>[
+            <span class="string">"textureItem/dovynaid/1.png"</span>,
+            <span class="string">"textureItem/dovynaid/2.png"</span>,
+            <span class="string">"textureItem/dovynaid/3.png"</span>,
+            <span class="string">"textureItem/dovynaid/4.png"</span>
+        ]
+    }
+}</div>
+
+<font style="font-size: 200%;">Статичная текстура</font>
+<div class="code"><span class="key">"id_texture"</span>:{
+    <span class="key">"type"</span>:<span class="string">"image"</span>,
+    <span class="key">"path"</span>:<span class="string">"textureItem/space_stone.png"</span>
+},</div>
+
+<font style="font-size: 200%;">Анимированная текстура</font>
+<div class="code"><span class="key">"id_texture"</span>:{
+    <span class="key">"type":"animation"</span>,
+    <span class="key">"format":"png"</span>,
+    <span class="key">"path"</span>[
+        <span class="string">"textureItem/dovynaid/1.png"</span>,
+        <span class="string">"noName/dovynaid/2.png"</span>,
+        <span class="string">"textureItem/randomItem/3.png"</span>,
+        <span class="string">"gameOver/bobr/228.png"</span>
+    ]
+}</div>
+
+Как видно различия есть.
+У статичной картинки type равен "image",
+а у анимации "animation".
+
+У статичной текстуры path равен путю к картинке,
+а у анимации массивом с путями к картинкам.
+                
+            </div>
             <p>
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
