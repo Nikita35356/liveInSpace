@@ -232,13 +232,22 @@
 "live" - прочность
 "loot_table" - айди <a href="#loot_table">таблицы лутов</a>
 "texture" - айди <a href="#texture">текстуры</a>
-</div>
+            </div>
             <h2 id="loot_table">Таблица лута</h2>
             <div style="white-space: pre-wrap;">
 По стандарту создаём файл, дополняем main.json
 
 Пример:
-<div class=code></div>
+<div class=code>
+{
+    <span class="key">"id_loot_table"</span>:[
+        {"name":"iron_ore","amount":{"range":[1,3]}},{"name":"space_stone","amount":{"range":[1,4]}}
+    ],
+    <span class="key">"meteor"</span>:[
+        {"name":"space_stone","amount":{"range":[2,5]}}
+    ]
+}
+</div>
             </div>
             <h2 id="localization">Локализация</h2>
             <div style="white-space: pre-wrap;">
