@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link id="Style" rel="stylesheet" href="css/version.css" type="text/css" />
         <link rel="stylesheet" href="css/syntax.css">
+        
+
+
+
         <title>Live in Space</title>
         <style>
             main div{
@@ -130,9 +134,37 @@
             </div>
             <h2 id="items">Файл предметов</h2>
             <div style="white-space: pre-wrap;">
-В написании
+Вот уже начинаем создавать предметы.
+Для начала создаём файл json.
+Для удобства назовём items.json (не обязательно)
+Как только мы создали файл, добавляем в main.json
+<div class="code">[<span class="string">"путь к файлу от папки мода"</span>,<span class="string">"items"</span>],</div>
+
+Открываем только что созданный файл (items.json).
+Пример того что в нём будет:
+<div class="code">{
+    <span class="key">"iron_ore"</span>:{
+        <span class="key">"name"</span>:<span class="string">"iron_ore"</span>,
+        <span class="key">"texture"</span>: <span class="string">"iron_ore"</span>
+    },
+    <span class="key">"iron_ingot"</span>:{
+        <span class="key">"name"</span>:<span class="string">"iron_ingot"</span>,
+        <span class="key">"texture"</span>:<span class="string">"iron_ingot"</span>
+    } 
+}</div>
+
+Шаблонный элемент:
+<div class="code"><span class="key">"id_item"</span>:{
+    <span class="key">"id_name"</span>:<span class="string">"iron_ore"</span>,
+    <span class="key">"id_texture"</span>: <span class="string">"iron_ore"</span>
+},</div>
+
+«id_item» – айди предмета для будущей работы с ним
+«id_name» - айди <a href="#localization">локализации</a> 
+«id_texture» - айди <a href="#texture">текстуры</a>
             </div>
-            <p id="texture">
+            <h2 id="texture">Текстуры</h2>
+            <p>
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
             </p>
@@ -163,6 +195,7 @@
 
         </main>
         <footer></footer>
+        
     </body>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
