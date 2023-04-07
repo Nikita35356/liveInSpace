@@ -50,6 +50,8 @@
                 <a href="#typesFiles">Типы файлов</a><br>
                 <a href="#items">Предметы</a><br>
                 <a href="#texture">Текстуры</a><br>
+                <a href="#builds">Постройки</a><br>
+                <a href="#loot_table">Таблица лута</a><br>
                 <a href="#localization">Локализация</a><br>
             </p>
             <h2  id="osnova">Основа</h2>
@@ -176,9 +178,9 @@
         <span class="key">"path"</span>:<span class="string">"textureItem/space_stone.png"</span>
     },
     <span class="key">"dovynaid"</span>:{
-        <span class="key">"type":"animation"</span>,
-        <span class="key">"format":"png"</span>,
-        <span class="key">"path"</span>[
+        <span class="key">"type"</span>:<span class="string">"animation"</span>,
+        <span class="key">"format"</span>:<span class="string">"png"</span>,
+        <span class="key">"path"</span>:[
             <span class="string">"textureItem/dovynaid/1.png"</span>,
             <span class="string">"textureItem/dovynaid/2.png"</span>,
             <span class="string">"textureItem/dovynaid/3.png"</span>,
@@ -195,9 +197,9 @@
 
 <font style="font-size: 200%;">Анимированная текстура</font>
 <div class="code"><span class="key">"id_texture"</span>:{
-    <span class="key">"type":"animation"</span>,
-    <span class="key">"format":"png"</span>,
-    <span class="key">"path"</span>[
+    <span class="key">"type"</span>:<span class="string">"animation"</span>,
+    <span class="key">"format"</span>:<span class="string">"png"</span>,
+    <span class="key">"path"</span>:[
         <span class="string">"textureItem/dovynaid/1.png"</span>,
         <span class="string">"noName/dovynaid/2.png"</span>,
         <span class="string">"textureItem/randomItem/3.png"</span>,
@@ -226,27 +228,22 @@
         <span class="key">"texture"</span>:<span class="string">"id_texture"</span>
     }
 }</div>
+"id_build" - айди постройки
+"name" - айди <a href="#localization">локализации</a>
+"live" - прочность
+"loot_table" - айди <a href="#loot_table">таблицы лутов</a>
+"texture" - айди <a href="#texture">текстуры</a>
             </div>
-            <p>
+            <h2 id="#loot_table">Таблица лута</h2>
+            <div style="white-space: pre-wrap;">
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
-            </p>
-            <p id="localization">
+            </div>
+            <h2 id="localization">Локализация</h2>
+            <div style="white-space: pre-wrap;">
                 Хочешь создать мод для LiveInSpace?<br>
                 То тебе сюда.
-            </p>
-            <p>
-                Хочешь создать мод для LiveInSpace?<br>
-                То тебе сюда.
-            </p>
-            <p>
-                Хочешь создать мод для LiveInSpace?<br>
-                То тебе сюда.
-            </p>
-            <p>
-                Хочешь создать мод для LiveInSpace?<br>
-                То тебе сюда.
-            </p>
+            </div>
 
         </main>
         <footer></footer>
