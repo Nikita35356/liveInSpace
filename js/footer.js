@@ -1,7 +1,7 @@
 var foot = document.getElementsByTagName("footer")[0]
 
 var links = {
-    "Дискорд":"https://discord.gg/2rpgNFdmXR"
+    "Дискорд":"https://discord.gg/eNWcjqyBxB"
 }
 
 for (const key in links) {
