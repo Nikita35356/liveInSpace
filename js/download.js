@@ -15,46 +15,11 @@ var version = document.location.search.slice(9)
 
 var code = `<h2>В ${version} добавили:</h2>`
 
-//if (version != "") {
-//    ver()
-//}else{
-    loadVer()
-//}
+
+loadVer()
 
 
 
-
-// function ver(){
-    
-//     version = "0.0.3"
-    
-//     Style.href = "css/version.css"
-//     parse(infoVersion[version],t=true)
-// }
-
-// function parse(item,t=false) {
-    
-//     for (var i = 0; i < item.length; i++) {
-//         code += "<ul>"
-        
-//         console.log(item[i]);
-//         if (typeof(item[i])=="string") {
-//             code += `<li>${item[i]}</li>`
-//         } else if (typeof(item[i])=="object") {
-//             code += `<li>${item[i][0]}</li>`
-//             parse(item[i][1])
-//         }
-//         code += "</ul>"
-        
-        
-//     }
-//     if (t) {
-         
-//         console.log(code);
-//         main.innerHTML = code
-//     }
-    
-// }
 
 
 function loadVer(){
