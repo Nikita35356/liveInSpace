@@ -131,6 +131,7 @@
 •	options – файл со списком намтроек (в разработке)
 •	ui – файл с интерфейсом (в разработке)
 •	scripts – файл со скриптами (в разработке)
+•	spawnRes – файл с массивом зданий, которые могут заспавниться при падении метеорита
 
 Все типы маленькими буквами
             </div>
@@ -233,6 +234,16 @@
 "live" - прочность
 "loot_table" - айди <a href="#loot_table">таблицы лутов</a>
 "texture" - айди <a href="#texture">текстуры</a>
+
+<font style="font-size: 200%;">Спавн после метеорита</font>
+
+Если вы хотите спавнить строение при падении метеорита, то
+1) Создайте файл json
+2) Дополните main.json с типом "spawnRes"
+
+Пример нового файла: <div class="code">[<span class="string">"id_build"</span>,<span class="string">"id_build"</span>]</div>
+
+"id_build" - айди постройки/здания
             </div>
             <h2 id="loot_table">Таблица лута</h2>
             <div style="white-space: pre-wrap;">
