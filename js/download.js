@@ -3,6 +3,7 @@ var infoVersion = {
     "0.0.3":"1G5hUhjkPouCaFQmFE1O4fgJ_keXkXM7b",
     "0.0.4":"",
     "0.0.5":"",
+    "0.0.6":""
 }
 
 
