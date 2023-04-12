@@ -8,9 +8,9 @@ var infoVersion = {
 
 
 
-if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    Style.href = "css/versionPC.css"
-}
+// if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//     Style.href = "css/versionPC.css"
+// }
 
 var version = document.location.search.slice(9)
 
