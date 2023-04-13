@@ -36,8 +36,8 @@ header {
     padding: 10px;
     display: flex;
     text-align: center;
-    /* overflow-x: scroll;
-    scrollbar-color: var(--backColor) --backColorRazdel;
+    overflow-x: scroll;
+    /*scrollbar-color: var(--backColor) --backColorRazdel;
     scrollbar-width: thin; */
 }
 
