@@ -45,9 +45,9 @@
     .img {
         width: 45vw;
     }
-    #tt {
+    /* #tt {
         justify-content: space-around;
-    }
+    } */
 }
 @media (max-width:767px) {
     .vers {
