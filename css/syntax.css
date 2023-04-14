@@ -10,4 +10,5 @@
     background-color: rgb(51, 51, 51);
     margin-top: 10px;
     margin-bottom: 10px;
+    overflow-x:scroll;
 }
