@@ -1,0 +1,49 @@
+main {
+    flex: 1 1 auto;
+}
+
+.news {
+    text-align: center;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.news section {
+    display: flex;
+    justify-content: center;
+}
+
+.news section article {
+    margin: 10px;
+    border: var(--borderAction) solid 5px;
+    background-color: var(--backAction);
+    flex-basis: 30%;
+    height: 300px;
+}
+
+.news section article p:first-child {
+    text-align: center;
+}
+
+.news section article p:nth-child(2) {
+    font-size: 24px;
+}
+
+.vers p, .modsR p {
+    text-align: center;
+    font-size: 32px;
+}
+.versions, .mods {
+    display: flex;
+    overflow-x: auto;
+    justify-content: start;
+    background-color: var(--backSection);
+    padding-right: 5px;
+}
+
+.mod, .version {
+    margin: 10px 5px 10px 10px;
+    height: 166px;
+    min-width: 288px;
+    background-color: var(--backAction);
+}
