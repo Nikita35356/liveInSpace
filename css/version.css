@@ -35,6 +35,7 @@
 
 .vers:hover {
     filter: brightness(0.6);
+    z-index: 5;
 }
 
 @media (max-width:992px) {
