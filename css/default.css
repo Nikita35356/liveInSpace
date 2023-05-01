@@ -5,7 +5,6 @@
     --borderAction:#2D0064;
     --backSection:#250052;
     --backRazdel:#5E08C4;
-    --backFooter:#282828;
     --backBody:#3B037F;
 }
 
@@ -31,4 +30,35 @@ header,main,footer{
 
 a {
     color: var(--fontColorLink);
+}
+
+.all {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: none;
+    background-color: #000000aa;
+    width: 100vw;
+    height: 100vh;
+}
+
+.all[active="true"] {
+    display: block;
+    z-index: 100;
+}
+
+
+
+.popup {
+    padding: 3px;
+    position: fixed;
+    width: 75vmin;
+    height: 75vmin;
+    border-radius: 2.5%;
+    z-index: 100;
+    background-color: var(--backRazdel);
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    
 }
