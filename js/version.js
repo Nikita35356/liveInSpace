@@ -14,7 +14,7 @@ var infoVersion = {
 
 var version = document.location.search.slice(9)
 
-var code = `<h2>В ${version} добавили:</h2>`
+var code = ''
 
 if (version != "") {
     ver()
@@ -33,6 +33,8 @@ function ver(){
 
 function parse(item,t=false) {
     
+
+
     for (var i = 0; i < item.length; i++) {
         code += "<ul>"
         
@@ -47,25 +49,36 @@ function parse(item,t=false) {
         
         
     }
-    if (t) {
-         
-        console.log(code);
-        main.innerHTML = code
-    }
+
+    return code
     
 }
 
 
-function loadVer(){
+// function loadVer(){
+//     var codes = ""
+//     var g = 0
+//     for(var i in infoVersion){
+//         codes += `<div class="vers" onclick="openVers('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`
+//     }
+//     tt.innerHTML = codes + "</div>"
+// }
+
+function loadVer() {
     var codes = ""
-    var g = 0
-    for(var i in infoVersion){
-        codes += `<div class="vers" onclick="openVers('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`
+    for (var i in infoVersion) {
+        codes += `<div class="version" onclick="popup('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`
+        
     }
-    tt.innerHTML = codes + "</div>"
+
+    versions.innerHTML = codes
+
 }
 
-
-function openVers(vers){
-    document.location.href += "?version="+vers
+function popup(versi) {
+    console.log(5);
+    code = `<h2>В ${versi} добавили:</h2>`
+    document.getElementsByClassName("popup")[0].innerHTML = parse(infoVersion[versi],t=true)
+    code = ""
+    document.getElementsByClassName("all")[0].attributes.active.value = "true"
 }
