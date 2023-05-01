@@ -3,7 +3,8 @@ var infoVersion = {
     "0.0.3":[["Золото",["Спавн","Предмет “Золотая руда”"]],["Инвентарь",["Работает кнопка “Выкинуть всё” и “Съесть”(Пока что нет предмета который можно съесть))"]],"Интерфейс (немного изменился)"],
     "0.0.4":[["Главное меню",["Кнопка играть","Кнопка выход"]],"Система модов"],
     "0.0.5":["Теперь можно скачивать моды!(их не много))"],
-    "0.0.6":[["Моды",["Теперь моды скачиваются нормально(раньше не было видно т. к. они были одинаковы)","Дополнен функционал(смотреть на <a href=\"modsWiki.html\">вики)</a>"]],"Чуть-чуть изминился интерфейс","Теперь мир можно сохранить (ресурсы нет ещё))"]
+    "0.0.6":[["Моды",["Теперь моды скачиваются нормально(раньше не было видно т. к. они были одинаковы)","Дополнен функционал(смотреть на <a href=\"modsWiki.html\">вики)</a>"]],"Чуть-чуть изминился интерфейс","Теперь мир можно сохранить (ресурсы нет ещё))"],
+    "0.0.7":[["Интерфейс",["В главном меню есть новости","И в самой игре изменился интерфейс"]],"Начата разработка приложения для создания мода",["Моды",["Теперь есть ui файлы","Вики для создания модов больше не будет;)"]]]
 }
 
 
@@ -54,16 +55,6 @@ function parse(item,t=false) {
     
 }
 
-
-// function loadVer(){
-//     var codes = ""
-//     var g = 0
-//     for(var i in infoVersion){
-//         codes += `<div class="vers" onclick="openVers('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`
-//     }
-//     tt.innerHTML = codes + "</div>"
-// }
-
 function loadVer() {
     var codes = ""
     for (var i in infoVersion) {
@@ -78,7 +69,10 @@ function loadVer() {
 function popup(versi) {
     console.log(5);
     code = `<h2>В ${versi} добавили:</h2>`
-    document.getElementsByClassName("popup")[0].innerHTML = parse(infoVersion[versi],t=true)
+    parse(infoVersion[versi],t=true)
+    code += `<div class=g><a class="down" href="https://nikita35356.github.io/versionLiveInSpace/${versi}.zip">Скачать</a></div>`
+
+    document.getElementsByClassName("c")[0].innerHTML = code
     code = ""
     document.getElementsByClassName("all")[0].attributes.active.value = "true"
 }
