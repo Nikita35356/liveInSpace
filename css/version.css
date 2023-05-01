@@ -1,17 +1,3 @@
-/* .vers {
-    justify-content: center;
-    padding: 0px;
-    margin:calc((95vw - 22px - 30vw*3)/6);
-    color: white;
-    margin-bottom: auto;
-    text-align: left;
-    width: calc(30vw - 5vh);
-    background-size: 100%;
-    align-self: center;
-    overflow: hidden;
-    position: relative;
-} */
-
 .version {
     position: relative;
     overflow: hidden;
@@ -41,30 +27,8 @@
 
 .version:hover {
     filter: brightness(0.6);
-    /* z-index: 5; */
 }
 
-/* @media (max-width:992px) {
-    .vers {
-        flex: 1 0 50%;
-        margin: 0px;
-    }
-    .img {
-        width: 45vw;
-    }
-    #tt {
-        justify-content: space-around;
-    } 
+.g {
+    font-size: 32px;
 }
-@media (max-width:767px) {
-    .vers {
-        flex: 0 0 90%;
-        margin: 0px;
-    }
-    .img {
-        width: 85vw;
-    }
-    /* #tt {
-        justify-content: space-around;
-    }
-} */
