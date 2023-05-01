@@ -1,5 +1,13 @@
+:root {
+    --scroll-En:auto;
+}
+
 main {
     flex: 1 1 auto;
+}
+
+body {
+    overflow-y: var(--scroll-En);
 }
 
 .news {
@@ -39,6 +47,11 @@ main {
     justify-content: start;
     background-color: var(--backSection);
     padding-right: 5px;
+}
+
+.versions:hover, .mods:hover{
+    --scroll-En: hidden;
+    background-color: black;
 }
 
 .mod, .version {
