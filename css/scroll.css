@@ -19,8 +19,4 @@
     background: var(--scroolIn);
 }
 
-header ::-webkit-scrollbar-track {
-    margin-bottom: 5px;
-    border-radius: 150px;
-}
 
