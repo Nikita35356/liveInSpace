@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/mainIndex.css">
+        <link rel="stylesheet" href="css/version.css">
 
         <script src="js/jquery.min.js"></script>
 
@@ -25,6 +26,12 @@
         
         <header></header>
         <main>
+            <div class="all noScroll" active="false" onclick="this.attributes.active.value = 'false'">
+                <div class="popup">
+
+                </div>
+            </div>
+            
             <div class="news">
                 <p>Последние новости</p>
                 <section>
@@ -35,7 +42,7 @@
             </div>
             <div class="vers">
                 <p>Версии</p>
-                <section class="versions gor-scroll noScroll">
+                <section id="versions" class="versions gor-scroll noScroll">
                     <article class="version"></article>
                     <article class="version"></article>
                     <article class="version"></article>
@@ -48,7 +55,7 @@
             </div>
             <div class="modsR">
                 <p>Моды</p>
-                <section class="mods gor-scroll noScroll">
+                <section id="mods" class="mods gor-scroll noScroll">
                     <article class="mod"></article>
                     <article class="mod"></article>
                     <article class="mod"></article>
@@ -62,6 +69,7 @@
         </main>
         <footer></footer>
     </body>
+    <script src="js/version.js"></script>
     <script src="js/gorizont-scroll.js"></script>
     <script src="js/no-scroll-vert.js"></script>
     <script src="js/header.js"></script>
