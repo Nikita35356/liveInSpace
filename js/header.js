@@ -4,10 +4,10 @@ header.innerHTML =`<img class=icon src=icon.png>`
 
 
 const NAMES = {
-    "index":"index",
-    "versionInfo":"versionInfo",
-    "versionDownload":"versionDownload",
-    "modsWiki":"modsWiki"
+    "index":"index"//,
+    // "versionInfo":"versionInfo",
+    // "versionDownload":"versionDownload",
+    // "modsWiki":"modsWiki"
 }
 
 const NameTwo = {
