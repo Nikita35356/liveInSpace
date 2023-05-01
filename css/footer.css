@@ -1,3 +1,7 @@
+:root {
+    --backFooter:#282828;
+}
+
 footer {
     background-color: var(--backFooter);
     margin-bottom: 0px;
