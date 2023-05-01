@@ -51,7 +51,7 @@ body {
 
 .versions:hover, .mods:hover{
     --scroll-En: hidden;
-    background-color: black;
+    
 }
 
 .mod, .version {
