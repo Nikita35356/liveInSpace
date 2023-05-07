@@ -43,6 +43,7 @@ body {
 }
 .versions, .mods {
     display: flex;
+    flex-direction: row-reverse;
     overflow-x: auto;
     justify-content: start;
     background-color: var(--backSection);
