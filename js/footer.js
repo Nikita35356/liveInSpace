@@ -7,3 +7,5 @@ var links = {
 for (const key in links) {
     foot.innerHTML += `<p><a href="${links[key]}">${key}</a></p>`
 }
+
+foot.innerHTML += "<p>Live In Space Lazuwid studio game</p>"
