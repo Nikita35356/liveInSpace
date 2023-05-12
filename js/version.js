@@ -58,7 +58,7 @@ function parse(item,t=false) {
 function loadVer() {
     var codes = ""
     for (var i in infoVersion) {
-        codes += `<div class="version" onclick="popup('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`
+        codes = `<div class="version" onclick="popup('${i}')"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></div>`+codes
         
     }
 
