@@ -26,7 +26,7 @@ loadVer()
 function loadVer(){
     var codes = ""
     for(var i in infoVersion){
-        codes += `<a class="vers" download href="https://nikita35356.github.io/versionLiveInSpace/${i}.zip"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></a>`
+        codes = `<a class="vers" download href="https://nikita35356.github.io/versionLiveInSpace/${i}.zip"><img class="img" src="sprites/${i}.png" alt="" /><div class=names>${i}</div></a>` + codes
     }
     main.innerHTML = `<h2>При нажатии подождите пару секунд</h2><div id="tt">` + codes + `</div>`
 }
